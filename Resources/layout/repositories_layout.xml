@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/colorPrimaryDark">
+ 
+    <!--HEADER WRAPPER-->
+    <LinearLayout
+        android:elevation="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repo_view_titlebar"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/icn_repo"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="logo" />
+
+        <TextView 
+            android:fontFamily="@font/firasans_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/repositories_title"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+         
+    </LinearLayout>
+    <!--HEADER WRAPPER-->
+
+    <LinearLayout
+        android:id="@+id/repo_view_menubar"
+        android:layout_below="@id/repo_view_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/menubar"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+         <ImageButton
+            android:id="@+id/btn_home"
+            android:background="@drawable/icn_home"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageButton
+            android:id="@+id/btn_sort_repo_asc"
+            android:background="@drawable/icn_sort_asc"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageButton
+            android:id="@+id/btn_sort_repo_desc"
+            android:background="@drawable/icn_sort_desc"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageButton
+            android:id="@+id/btn_sort_repo_date_asc"
+            android:background="@drawable/icn_date_asc"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="16dp"
+            android:adjustViewBounds="true"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <ImageButton
+            android:id="@+id/btn_sort_repo_date_desc"
+            android:background="@drawable/icn_sort_date"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+    </LinearLayout>
+
+    <!--LISTVIEW-->
+    <ListView
+        android:layout_below="@id/repo_view_menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/repo_list_divider"
+        android:dividerHeight="4px"
+        android:id="@+id/repos_listview">
+
+    </ListView>
+    <!--LISTVIEW-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/repo_snackview"/>
+
+</RelativeLayout>

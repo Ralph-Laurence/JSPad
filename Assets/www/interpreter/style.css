@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+
+@font-face {
+    font-family: "mono";
+    src: url("SpaceMono-Regular.ttf");
+}
+
+body
+{
+    margin: 0;
+    font-size: 14px; 
+    background-color: #1F2227;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    font-family: "mono", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica;
+}
+  
+.logbox
+{
+    width: 100%; 
+    background-color: #1A1D21;
+    word-break: break-all;
+}
+
+.logbox div
+{
+    padding: 2px;
+    margin-top: 2px;
+}
+
+.log-content
+{
+    width: 100%;
+} 
+
+.log-icon
+{
+    margin-right: 4px;
+}
+
+.log-wrapper
+{
+    display: flex;
+    background-color: #141619; 
+    border-top: 2px solid #2C2F34;
+    border-bottom: 2px solid #2C2F34;
+}
+
+.inf-wrapper
+{
+    display: flex;
+    background-color: #1A1D45; 
+    border-top: 2px solid #1A4B9C;
+    border-bottom: 2px solid #1A4B9C;
+}
+
+.warn-wrapper
+{
+    display: flex;
+    background-color: #78673B;
+    border-top: 2px solid #F4BB57;
+    border-bottom: 2px solid #F4BB57;
+}
+
+.err-wrapper
+{
+    display: flex;
+    background-color: #FDC3C3;
+    border-top: 2px solid #FA3E48;
+    border-bottom: 2px solid #FA3E48;
+}
+
+.err-wrapper .log-text { color: #DC2E2B;}

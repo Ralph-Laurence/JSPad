@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/colorPrimaryDark">
+ 
+    <!--HEADER WRAPPER-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_wrapper"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <!--TITLE BAR-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp">
+
+                <ImageView
+                    android:src="@drawable/icn_app_logo"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:contentDescription="logo" />
+
+                <TextView
+                    android:fontFamily="@font/firasans_semibold"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/logo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/logo_text"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:fontFamily="@font/firasans_regular"
+                    android:id="@+id/filename_text"
+                    android:textColor="?android:attr/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Untitled"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/logo_text"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--TITLE BAR-->
+
+        <!--MENUBAR WRAPPER-->
+        <include layout="@layout/menu_bar"/>
+        <!--MENUBAR WRAPPER-->
+
+    </LinearLayout>
+    <!--HEADER WRAPPER-->
+
+    <!--MAIN CONTENT-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_above="@id/relative_footer"
+        android:layout_below="@id/header_wrapper">
+
+        <!--DIVIDER SPACER-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/divider_spacer"
+            android:background="@color/colorPrimaryDark">
+
+            <!--DIVIDER LINE-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimary"/>
+        </RelativeLayout>
+        <!--DIVIDER SPACER-->
+
+        <!--THE MAIN EDITOR-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider_spacer"
+            android:background="@color/colorPrimaryDark">
+
+            <android.webkit.WebView
+                android:id="@+id/code_editor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+        <!--THE MAIN EDITOR-->
+
+    </RelativeLayout>
+    <!--MAIN CONTENT-->
+
+    <!--FOOTER-->
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"  
+        android:layout_alignParentBottom="true"
+        android:background="@color/footer"
+        android:orientation="vertical"
+        android:id="@+id/relative_footer">
+
+        <!--DIVIDER LINE-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/footer_divider"
+            android:background="@color/footer_border"/>
+          
+        <!--FILE ACTION MENU-->
+        <include layout="@layout/file_action"/>
+        
+
+    </LinearLayout>
+    <!--FOOTER-->
+
+</RelativeLayout>

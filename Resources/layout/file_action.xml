@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/menubar_wrapper"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <!--
+            EQUAL SPACING OF CHILD ELEMENTS
+            Using Space and layout weight
+            Thanks to : stoefln
+            https://stackoverflow.com/a/14125793/15013058
+            -->
+
+    
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--SYMBOLS-->
+    <Button
+        android:id="@+id/tab_space_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_tab"
+        style="?android:attr/borderlessButtonStyle"/>
+     
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--SETTINGS-->
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_gear"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--NEW-->
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_add_file"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--OPEN-->
+    <Button
+        android:id="@+id/open_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_folder"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--SAVE-->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_floppy"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+     
+    <!--RUN-->
+    <Button
+        android:id="@+id/run_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_run"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+</LinearLayout>

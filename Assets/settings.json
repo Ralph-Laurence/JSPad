@@ -1,0 +1,12 @@
+﻿[
+  {
+    "Theme": "dark",
+    "FontSize": "12",
+    "TabSize": "4",
+    "EnableAutocomplete": "true",
+    "EnableSnippets": "true",
+    "EnableIndentGuide": "true",
+    "ShowFold": "true",
+    "ShowLineNums": "true"
+  }
+]

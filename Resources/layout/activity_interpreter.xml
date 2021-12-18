@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlebar_wrapper"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <!--TITLEBAR-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@color/colorPrimary"
+            android:padding="4dp">
+
+            <!--BACK BUTTON-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/layout_console_button"
+                android:layout_alignParentLeft="true">
+                <Button
+                    android:id="@+id/console_back_button"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icn_back"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:layout_toRightOf="@id/layout_console_button">
+                <!--TITLE TEXT-->
+                <TextView
+                    android:fontFamily="@font/firasans_semibold"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/console_title_text"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_toRightOf="@id/console_back_button"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--SUBTITLE-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:padding="4dp">
+
+            <!--CONSOLE ICON-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/layout_console_icon"
+                android:layout_alignParentLeft="true">
+                <Button
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icn_console"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_toRightOf="@id/layout_console_icon">
+                <!--SUBTITLE TEXT-->
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/console_title"
+                    android:ellipsize="end"
+                    android:textSize="14sp"
+                    android:textColor="@color/console_subtitle_text"
+                    android:layout_toRightOf="@id/console_back_button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/layout_clear_console"
+                android:layout_alignParentRight="true">
+                <Button
+                    android:id="@+id/btn_clear_console"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icn_clear_console"
+                    style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--PREVIEWER-->
+    <android.webkit.WebView
+        android:layout_below="@id/titlebar_wrapper"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/interpreter_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

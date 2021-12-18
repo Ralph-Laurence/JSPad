@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body> 
+    <div class="logbox"></div>
+    <!--SCRIPT INTERPRETER ENGINE-->
+    <script>
+        var log = $(".logbox")[0];
+
+        ["log", "warn", "error", "info"].forEach(function (verb) {
+            console[verb] = (function (method, verb, log) {
+                return function (text) {
+                    method(text);
+
+                    var classList = "";
+                    var iconSrc = "";
+
+                    switch (verb) {
+                        case "log":
+                            classList = "log-wrapper";
+                            iconSrc = "log.png";
+                            break;
+
+                        case "warn":
+                            classList = "warn-wrapper";
+                            iconSrc = "warn.png";
+                            break;
+
+                        case "error":
+                            classList = "err-wrapper";
+                            iconSrc = "error.png";
+                            break;
+
+                        case "info":
+                            classList = "inf-wrapper";
+                            iconSrc = "info.png";
+                            break;
+                    }
+
+                    // Log Wrapper
+                    var msg = document.createElement("div");
+                    msg.classList.add(classList);
+
+                    // Log Icon Wrapper
+                    var icon_wrapper = document.createElement("div");
+                    icon_wrapper.classList.add("log-icon");
+
+                    // Log Icon
+                    var icon = document.createElement("img");
+                    icon.src = iconSrc;
+                    icon.width = 20;
+                    icon.height = 20;
+
+                    // Log Message
+                    var logText = document.createElement("div");
+                    logText.classList.add("log-text");
+                    logText.textContent = text;
+
+                    icon_wrapper.appendChild(icon);
+
+                    msg.appendChild(icon_wrapper);
+                    msg.appendChild(logText);
+
+                    log.append(msg);
+                }
+            })(console[verb].bind(console), verb, log);
+        });
+        //
+        // Clear the console
+        //
+        function clear()
+        {
+            $(".logbox").empty();
+            console.clear();
+        }
+        //
+        // Virtual function to clear console
+        //
+
+    </script>
+    <script>
+       {content}
+    </script>
+</body>
+</html>

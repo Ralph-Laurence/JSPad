@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/menubar_wrapper"
+    android:orientation="horizontal"
+    android:padding="4dp"
+    android:background="@color/menubar">
+
+    <!--
+            EQUAL SPACING OF CHILD ELEMENTS
+            Using Space and layout weight
+            Thanks to : stoefln
+            https://stackoverflow.com/a/14125793/15013058
+            -->
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--UNDO-->
+    <Button
+        android:id="@+id/undo_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_undo"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--REDO-->
+    <Button
+        android:id="@+id/redo_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_redo"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--CUT-->
+    <Button
+        android:id="@+id/cut_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_cut"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--COPY-->
+    <Button
+        android:id="@+id/copy_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_copy"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--PASTE-->
+    <Button
+        android:id="@+id/paste_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_paste"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--FIND-->
+    <Button
+        android:id="@+id/find_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_find"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--SELECT ALL-->
+    <Button
+        android:id="@+id/select_all"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_selectall"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <!--CLEAR ALL-->
+    <Button
+        android:id="@+id/clear_all"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/icn_clearall"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" >
+    </Space>
+
+</LinearLayout>

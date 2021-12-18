@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--BEHAVIOUR SETTING GROUP TITLE-->
+    <TextView
+        android:textColor="@color/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_group_behaviour"
+        android:textSize="16sp"/>
+
+    <!--SETTINGS FOR INTELLISENSE-->
+    <RelativeLayout
+        android:layout_marginVertical="14dp"
+        android:layout_width="match_parent"
+        android:paddingVertical="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_item_intellisense"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/intellisense_switch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:trackTint="@color/switch_track_selector"
+            app:thumbTint="@color/switch_thumb_selector"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/repo_list_divider"/>
+
+     <!--SETTINGS FOR SNIPPETS-->
+    <RelativeLayout
+        android:layout_marginVertical="14dp"
+        android:layout_width="match_parent"
+        android:paddingVertical="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_item_snippets"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/snippet_switch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:trackTint="@color/switch_track_selector"
+            app:thumbTint="@color/switch_thumb_selector"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/repo_list_divider"/>
+
+    <!--SETTINGS FOR INDENTS-->
+    <RelativeLayout
+        android:layout_marginVertical="14dp"
+        android:layout_width="match_parent"
+        android:paddingVertical="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_item_indent"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/indent_switch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:trackTint="@color/switch_track_selector"
+            app:thumbTint="@color/switch_thumb_selector"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/repo_list_divider"/>
+
+    <!--SETTINGS FOR CODE FOLDS-->
+    <RelativeLayout
+        android:layout_marginVertical="14dp"
+        android:paddingVertical="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_item_folding"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/code_folding_switch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:trackTint="@color/switch_track_selector"
+            app:thumbTint="@color/switch_thumb_selector"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/repo_list_divider"/>
+
+    <!--SETTINGS FOR CODE FOLDS-->
+    <RelativeLayout
+        android:layout_marginVertical="14dp"
+        android:paddingVertical="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_item_linenum"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/line_num_switch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:trackTint="@color/switch_track_selector"
+            app:thumbTint="@color/switch_thumb_selector"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginBottom="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/repo_list_divider"/>
+
+</merge>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/colorPrimaryDark">
+    <ImageView
+        android:id="@+id/row_icn_recents"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/icn_recent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:textColor="@color/repo_list_title"
+        android:id="@+id/row_text_recents_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/row_icn_recents"
+        android:layout_toRightOf="@id/row_icn_recents"  
+        android:textSize="16dip"
+        android:textStyle="bold" />
+    <TextView
+        android:textColor="@color/recents_list_date"
+        android:id="@+id/row_text_recents_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_text_recents_title"
+        android:layout_marginTop="1dip" 
+        android:textSize="14dip"
+        android:layout_toRightOf="@id/row_icn_recents" />
+</RelativeLayout> 

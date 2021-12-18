@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <!--HEADER WRAPPER-->
+    <RelativeLayout
+        android:elevation="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_view_titlebar"
+        android:layout_alignParentTop="true"
+        android:padding="4dp" >
+
+        <ImageView
+            android:id="@+id/settings_view_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/icn_wrench"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:contentDescription="logo"
+            android:layout_marginRight="8dp"/>
+
+        <TextView 
+            android:fontFamily="@font/firasans_semibold"
+            android:layout_toRightOf="@id/settings_view_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_screen_title"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+         
+    </RelativeLayout>
+    <!--HEADER WRAPPER-->
+
+    <ScrollView
+        android:layout_below="@id/settings_view_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="14dp">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+
+            <!--EDITOR THEME-->
+            <include
+                layout="@layout/settings_includes_look_and_feel"/>
+
+            <!--BEHAVIOUR-->
+            <include layout="@layout/settings_includes_behaviour"/>
+
+            <!--ABOUT-->
+            <include layout="@layout/settings_includes_about"/>
+
+        </LinearLayout> 
+
+    </ScrollView>
+
+</RelativeLayout>

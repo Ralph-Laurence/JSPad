@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+     <!--BEHAVIOUR SETTING GROUP TITLE-->
+    <TextView
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_group_about"
+        android:textSize="16sp"/>
+
+    <!--APP VERSION-->
+    <LinearLayout
+        android:layout_marginVertical="14dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_about_version"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/about_version_text"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/repo_list_divider"
+            android:text="@string/settings_about_version"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"/>
+
+         
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/repo_list_divider"/>
+
+    <!--APP ICONS-->
+    <LinearLayout
+        android:layout_marginVertical="14dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_about_icons"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/repo_list_divider"
+            android:text="@string/settings_about_icons8"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"/>
+
+         
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/repo_list_divider"/>
+
+    <!--APP DEVELOPER-->
+    <LinearLayout
+        android:layout_marginVertical="14dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/launch_subtitle_color"
+            android:text="@string/settings_about_developer_title"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/repo_list_divider"
+            android:text="@string/settings_about_developer"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"/>
+
+         
+    </LinearLayout> 
+
+</merge>

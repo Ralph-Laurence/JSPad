@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAC038</color>
+    <color name="colorPrimaryDark">#1A1D21</color>
+    <color name="colorAccent">#5E3FFF</color>
+	<color name="menubar">#FBD06A</color>
+	<color name="footer">#191919</color>
+	<color name="footer_border">#25282D</color>
+	<color name="footer_character_bar">#4A347F</color>
+	<color name="standard_white">#FFFFFF</color>
+
+	<color name="material_red">#E53935</color>
+
+	<color name="console_subtitle_divider">#2C2F34</color>
+	<color name="console_subtitle_text">#2871EA</color>
+
+	<color name="launch_subtitle_color">#F1F1F1</color>
+	<color name="launch_big_button">#333337</color>
+
+	<color name="create_script_location">#9E9E9E</color> 
+	<color name="recents_list_title">#9280FD</color>
+	<!--BLUEVIOLET: #8368FD-->
+	<color name="recents_list_date">#9FA8DD</color>
+	<color name="repo_list_title">#CB68B0</color>
+	<!--GREEN: #29CD51-->
+	<color name="repo_list_divider">#515150</color>
+
+	<color name="seekbar_track_background">#ABABAB</color>
+	 
+</resources>
